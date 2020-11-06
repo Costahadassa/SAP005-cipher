@@ -1,29 +1,26 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
-
-const buttonCodificar = document.getElementById("button");
-buttonCodificar.addEventListener("click", Codificar);
-function Codificar(CliqueAquiEvento){
-    CliqueAquiEvento.preventDefault();
 
 let MsgCod = document.getElementById("MsgCod").value;
-let offsetCod = Number(document.getElementById("offsetCod").value);
+let offsetCod = document.getElementById("offsetCod").value;
 
-const resultadoMsgCod=cipher.encode (offsetCod, MsgCod);
-document.getElementById("CodResultado").innerHTML=resultadoMsgCod;
-}
+const buttonCodificar = document.getElementById("codificar");
+buttonCodificar.addEventListener("click", function(){
 
-const buttonDecodificar = document.getElementById("Decodificar");
-buttonDecodificar.addEventListener("click", Decodificar);
 
-function Decodificar(CliqueAquiEvento){
-    CliqueAquiEvento.preventDefault();
+let encode = cipher.encode(Number(offsetCod),MsgCod);
 
-let MsgDeco = document.getElementById("MsgDeco").value;
-let offsetCod = Number(document.getElementById("offsetDeco").value);
+document.getElementById("codResultado").value=encode; 
 
-const resultadoMsgDeco=cipher.decode (offsetCod, MsgDeco);
-document.getElementById("DecoResultado").innerHTML=resultadoMsgDeco;
-}
+});
 
+let MsgDecodificar = document.getElementById("MsgDecodificar").value;
+let offsetDeco = document.getElementById("offsetDeco").value;
+
+const buttonDecodificar = document.getElementById("btnDecodificar");
+buttonDecodificar.addEventListener("click", function(){
+
+let decode = cipher.decode(Number(offsetDeco),MsgDecodificar)
+document.getElementById("decoResultado").value=decode; 
+
+});
