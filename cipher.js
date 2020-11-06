@@ -18,9 +18,9 @@ return Soma;
     for(let i = 0; i < MsgCod.length; i++) {
         SomaDecode += String.fromCharCode((( MsgCod.charCodeAt(i) - CodigoAscii - numDeslocamento) % tamAlfabeto) + CodigoAscii);
 
+        console.log(SomaDecode)
 }
 return SomaDecode;
 },
 };
 export default cipher;
-
