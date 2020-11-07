@@ -11,13 +11,11 @@ body{
 
 }
 div#root{
-    margin: 340x 120px;
+    margin: 1500px 120px;
 }
 
 textarea{ 
     background:beige; 
-    
-
 }
 
 button{
