@@ -43,27 +43,25 @@ com facilidade e não oferecem muita segurança na comunição, mas a cifra de C
 muitas vezes pode fazer parte de um sistema mais complexo de criptografia, como
 a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
-## 2. Resumo do projeto
+## 1. Resumo do projeto
 
-O que eu tenho que fazer exatamente? Neste projeto você criará a primeira
-aplicação web do _bootcamp_. Nela o usuário poderá cifrar e decrifrar um texto
-indicando a chave de deslocamento (_offset_).
+O produto Telegramas criptografados, foi inspirado na época que só era possivel encaminhar telegramas.
+O usuaŕio poderá enviar e receber telegramas criptografados.
+O produto foi desenvolvido pensando na segurança das pessoas que utilizarão do serviço. 
 
-O tema é livre. Você deve pensar em alguma situação de vida real em que seja
-necessário cifrar uma mensagem e pensar em como deve ser a experiência do
-usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
-exemplo:
 
-* Mensagens secretas para alguma pessoa.
-* Ferramenta de mensagens internas de uma organização em uma zona de conflito.
-* Cifrar cartões de crédito.
-* Criar senhas seguras para email.
+## 2. Objetivos de aprendizagem
 
-## 3. Objetivos de aprendizagem
+Acredito que a proposta dessa projeto foi inicialmente estimular a auto-aprendizagem, incentivar a independência na busca por conhecimento e introduzir algumas ferramentas iniciais de programação.  
+JS, Html e CSS. 
 
-Neste projeto você aprenderá a construir uma aplicação web (_WebApp_) que irá
-interagir com o usuário final através do navegador utilizando HTML, CSS e
-JavaScript como ferramentas.
+## 3. Fluxograma.
+
+1. Criar HTML. 
+2. Css.
+3. Cipher.js  criar a funcionalidade de code e encode.
+4. Subir no Github Pages.
+   <img src="fluxograma.jpg">
 
 ### HTML e CSS
 
